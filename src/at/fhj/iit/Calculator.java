@@ -1,7 +1,6 @@
 package at.fhj.iit;
 
 public interface Calculator {
-	
 	/**
 	 * Student 1
 	 * Student 2+
@@ -69,5 +68,4 @@ public interface Calculator {
 	int getMinimum();
 	
 	void addValue(int value);
-
 }
