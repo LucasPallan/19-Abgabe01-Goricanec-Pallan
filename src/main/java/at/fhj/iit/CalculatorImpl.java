@@ -1,4 +1,5 @@
 package at.fhj.iit;
+
 import java.util.*;
 
 public class CalculatorImpl implements Calculator
@@ -8,7 +9,11 @@ public class CalculatorImpl implements Calculator
     @Override
     public int sum() {
         int sum = 0;
-        for (int i = 0; i < list.size(); ++i) {
+
+
+        for (int i = 0; i < list.size(); i++)
+        {
+
             sum += list.get(i);
         }
         return sum;
@@ -29,7 +34,15 @@ public class CalculatorImpl implements Calculator
 
     @Override
     public int getMinimum() {
-        return 0;
+        int min = list.get(0);
+        for (int i = 1; i < list.size(); i++)
+        {
+            if (min > list.get(i))
+            {
+                min = list.get(i);
+            }
+        }
+        return min;
     }
 
     @Override

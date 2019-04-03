@@ -6,7 +6,7 @@ public class Main {
 		
 		// TODO implement your own Calculator Implementation and create a new CalculatorImpl Class
 		Calculator calc = new CalculatorImpl();
-		
+
 		calc.addValue(20);	// currently highest number
 		calc.addValue(4);	// currently lowester number
 		calc.addValue(16);
@@ -16,9 +16,11 @@ public class Main {
 		calc.addValue(30);
 		calc.addValue(1000);
 		calc.addValue(-5);
+		calc.addValue(17);
+		calc.addValue(-4);
 
 		// output lowest number 
-		
+		System.out.println("Min: " + calc.getMinimum());
 		// output highest number
 		System.out.println("Max: " + calc.getMaximum());
 		// output sum of all numbers
